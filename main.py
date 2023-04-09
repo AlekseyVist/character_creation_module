@@ -1,5 +1,7 @@
 from random import randint
 
+from graphic_arts.start_game_banner import run_screensaver
+
 DEFAULT_ATTACK: int = 5
 DEFAULT_DEFENCE: int = 10
 DEFAULT_STAMINA: int = 80
@@ -103,6 +105,8 @@ def choice_char_class(char_name: str) -> Character:
 
 def main() -> None:
     """Точка входа"""
+    if __name__ == '__main__':
+        run_screensaver()
     print('Приветствую тебя, искатель приключений!')
     print('Прежде чем начать игру...')
     char_name: str = input('...назови себя: ')
